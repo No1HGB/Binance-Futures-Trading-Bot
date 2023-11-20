@@ -4,3 +4,4 @@ venv
 .idea
 testing.py
 back_testing.py
+LiveTradingConfig_backup.py
