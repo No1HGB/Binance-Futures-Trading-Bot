@@ -21,7 +21,7 @@ order_size = 3 ## % of account
 interval = '5m'
 SL_mult = 1.5 ## SL_mult x TP_SL_choice = SL value
 TP_mult = 1 ## TP_mult x TP_SL_choice = TP value
-trade_all_symbols = True
+trade_all_symbols = False
 symbols_to_trade = ['BTCUSDT']
 coin_exclusion_list = ['USDCUSDT', 'BTCDOMUSDT'] ## Put coins you want to exclude in here, so they won't be traded
 use_trailing_stop = False
