@@ -18,7 +18,7 @@ TP_SL_choice = '%'
 '''
 leverage = 10
 order_size = 3 ## % of account
-interval = '1m'
+interval = '5m'
 SL_mult = 1.5 ## SL_mult x TP_SL_choice = SL value
 TP_mult = 1 ## TP_mult x TP_SL_choice = TP value
 trade_all_symbols = True
