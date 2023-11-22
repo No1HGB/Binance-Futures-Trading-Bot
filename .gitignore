@@ -6,3 +6,5 @@ testing.py
 back_testing.py
 .env
 backup/
+docs/
+nohub.out
