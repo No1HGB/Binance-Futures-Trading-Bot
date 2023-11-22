@@ -18,11 +18,11 @@ TP_SL_choice = '%'
 '''
 leverage = 10
 order_size = 3 ## % of account
-interval = '5m'
+interval = '1m'
 SL_mult = 1.5 ## SL_mult x TP_SL_choice = SL value
 TP_mult = 1 ## TP_mult x TP_SL_choice = TP value
 trade_all_symbols = False
-symbols_to_trade = ['BTCUSDT']
+symbols_to_trade = ['BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT']
 coin_exclusion_list = ['USDCUSDT', 'BTCDOMUSDT'] ## Put coins you want to exclude in here, so they won't be traded
 use_trailing_stop = False
 trailing_stop_callback = .1
