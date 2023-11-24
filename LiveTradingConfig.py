@@ -31,7 +31,7 @@ use_market_orders = False
 max_number_of_positions = 5
 wait_for_candle_close = True ## Not recommended setting to False, but was requested. If set to False the bot will take trades before candles close
 auto_calculate_buffer = True ## Set this to false if you want to manually allocate a buffer
-buffer = '7 days ago'
+buffer = '22 days ago'
 
 ## Logging configuration
 LOG_LEVEL = 20 ## CRITICAL = 50, ERROR = 40, WARNING = 30, INFO = 20, DEBUG = 10, NOTSET = 0
