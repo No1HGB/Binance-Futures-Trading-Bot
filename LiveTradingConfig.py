@@ -17,7 +17,7 @@ TP_SL_choice = 'USDT'
 'x (Swing Close) level 2', 'x (Swing Close) level 3
 '''
 leverage = 10
-order_size = 10 ## % of account
+order_size = 100 ## % of account
 interval = '1m'
 SL_mult = .5 ## SL_mult x TP_SL_choice = SL value
 TP_mult = 1.5 ## TP_mult x TP_SL_choice = TP value
