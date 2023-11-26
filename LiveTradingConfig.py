@@ -11,7 +11,7 @@ trading_strategy = 'tripleEMAStochasticRSIATR'
 valid options for trading_strategy are: 'StochRSIMACD', 'tripleEMAStochasticRSIATR', 'tripleEMA', 'breakout', 'stochBB',
 'goldenCross', 'candle_wick', 'fibMACD', 'EMA_cross', 'heikin_ashi_ema2', 'heikin_ashi_ema', 'ema_crossover'
 '''
-TP_SL_choice = 'x (Swing High/Low) level 2'
+TP_SL_choice = 'x (Swing High/Low) level 1'
 '''valid options for TP_SL_choice are: 'USDT', '%', 'x (ATR)', 'x (Swing High/Low) level 1',
 'x (Swing High/Low) level 2', 'x (Swing High/Low) level 3', 'x (Swing Close) level 1',
 'x (Swing Close) level 2', 'x (Swing Close) level 3
@@ -19,7 +19,7 @@ TP_SL_choice = 'x (Swing High/Low) level 2'
 leverage = 10
 order_size = 10 ## % of account
 interval = '1h'
-SL_mult = 3 ## SL_mult x TP_SL_choice = SL value
+SL_mult = 2 ## SL_mult x TP_SL_choice = SL value
 TP_mult = 2 ## TP_mult x TP_SL_choice = TP value
 trade_all_symbols = False
 symbols_to_trade = ['BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT'] ## 'BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT'
