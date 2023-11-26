@@ -11,7 +11,7 @@ trading_strategy = 'tripleEMAStochasticRSIATR'
 valid options for trading_strategy are: 'StochRSIMACD', 'tripleEMAStochasticRSIATR', 'tripleEMA', 'breakout', 'stochBB',
 'goldenCross', 'candle_wick', 'fibMACD', 'EMA_cross', 'heikin_ashi_ema2', 'heikin_ashi_ema', 'ema_crossover'
 '''
-TP_SL_choice = 'x (ATR)'
+TP_SL_choice = 'x (Swing High/Low) level 1'
 '''valid options for TP_SL_choice are: 'USDT', '%', 'x (ATR)', 'x (Swing High/Low) level 1',
 'x (Swing High/Low) level 2', 'x (Swing High/Low) level 3', 'x (Swing Close) level 1',
 'x (Swing Close) level 2', 'x (Swing Close) level 3
