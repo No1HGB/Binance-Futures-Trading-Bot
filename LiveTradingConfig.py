@@ -19,8 +19,8 @@ TP_SL_choice = '%'
 leverage = 10
 order_size = 10 ## % of account
 interval = '1m'
-SL_mult = .1 ## SL_mult x TP_SL_choice = SL value
-TP_mult = .2 ## TP_mult x TP_SL_choice = TP value
+SL_mult = .05 ## SL_mult x TP_SL_choice = SL value
+TP_mult = .15 ## TP_mult x TP_SL_choice = TP value
 trade_all_symbols = False
 symbols_to_trade = ['BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT'] ## 'BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT'
 coin_exclusion_list = ['USDCUSDT', 'BTCDOMUSDT'] ## Put coins you want to exclude in here, so they won't be traded
