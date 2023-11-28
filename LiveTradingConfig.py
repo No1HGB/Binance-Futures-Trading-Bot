@@ -18,7 +18,7 @@ TP_SL_choice = '%'
 '''
 leverage = 10
 order_size = 10 ## % of account
-interval = '1m'
+interval = '15m'
 SL_mult = .1 ## SL_mult x TP_SL_choice = SL value
 TP_mult = .2 ## TP_mult x TP_SL_choice = TP value
 trade_all_symbols = False
@@ -31,7 +31,7 @@ use_market_orders = False
 max_number_of_positions = 10
 wait_for_candle_close = True ## Not recommended setting to False, but was requested. If set to False the bot will take trades before candles close
 auto_calculate_buffer = True ## Set this to false if you want to manually allocate a buffer
-buffer = '9 hours ago'
+buffer = '6 days ago'
 
 ## Logging configuration
 LOG_LEVEL = 20 ## CRITICAL = 50, ERROR = 40, WARNING = 30, INFO = 20, DEBUG = 10, NOTSET = 0
