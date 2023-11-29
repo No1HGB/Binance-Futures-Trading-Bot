@@ -8,3 +8,6 @@ back_testing.py
 backup/
 docs/
 nohup.out
+
+back_testing/Backtests/
+back_testing/price_data/

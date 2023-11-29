@@ -1,6 +1,11 @@
 ##fill in your API keys here to be accessed by other scripts
-API_KEY = ''
-API_SECRET = ''
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
 
 ################## settings, these are very strategy dependant ensure you have enough data for your chosen strategy ##################################
 order_Size = 2.5  ## As % of account, i.e 2.5 = 2.5%

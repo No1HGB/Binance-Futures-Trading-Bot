@@ -490,30 +490,30 @@ def run_backtester(account_balance_start, leverage, order_size,  start, end, TIM
 
 
 if __name__ == "__main__":
-    start = "01-11-22"
-    end = "01-12-22"
-    buffer = 500 ## candlestick buffer, should be 5x your largest EMA length
+    start = "11-01-23"
+    end = "11-29-23"
+    buffer = 180 ## candlestick buffer, should be 5x your largest EMA length
     account_balance = 100  ## Starting account size
-    fee = .00036 ## .036%
+    fee = .0004 ## .04%
     leverage = 10
-    order_size = 1.25  ## 1.25% of account balance per trade with 10x leverage the position size would be 12.5%
-    TIME_INTERVAL = '5m'  ## valid intervals: 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d
-    Number_Of_Trades = 5  ## max amount of trades the bot will have open at any time
+    order_size = 10  ## 10% of account balance per trade with 10x leverage the position size would be 12.5%
+    TIME_INTERVAL = '1m'  ## valid intervals: 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d
+    Number_Of_Trades = 10  ## max amount of trades the bot will have open at any time
     slippage = .01  ## .01% recommended to use at least .01% slippage, the more slippage the strategy can survive the better the signals
     TP_SL_choice = '%'  ## type of TP/SL used in backtest, list of valid values: '%', 'x (ATR)', 'x (Swing High/Low) level 1', 'x (Swing Close) level 1', 'x (Swing High/Low) level 2', 'x (Swing Close) level 2', 'x (Swing High/Low) level 3', 'x (Swing Close) level 3'
-    SL_mult = .5  ## multiplier for the 'TP_SL_choice' above
-    TP_mult = 1  ## multiplier for the 'TP_SL_choice' above
+    SL_mult = .2  ## multiplier for the 'TP_SL_choice' above
+    TP_mult = .3  ## multiplier for the 'TP_SL_choice' above
     strategy = 'StochRSIMACD'  ##name of strategy you want to run
 
     use_trailing_stop = False  ## flag to use the trailing stop with callback distance defined below
-    trailing_stop_callback = 1  ## 1% keep the trailing stop this percent away from the last high/ low
+    trailing_stop_callback = .1  ## 1% keep the trailing stop this percent away from the last high/ low
     Trade_Each_Coin_With_Separate_Accounts = False  ## Isolated test will generate graphs for each coin as if it was trading separately from the other coins
     only_show_profitable_coins = False  # flag for the below percentage
-    percent_gain_threshold = 1  ## percentage for 'only_show_profitable_coins' flag, will only show coins at the end of the backtest that have made this amount of profit or more
+    percent_gain_threshold = .3  ## percentage for 'only_show_profitable_coins' flag, will only show coins at the end of the backtest that have made this amount of profit or more
     particular_drawdown = False  ## Flag for minimum drawdown below
     min_dd = 1  ## 1%, Only print coins which have had less than this drawdown when the above flag 'particular_drawdown' is True
 
-    symbol = ['BTCUSDT', 'BAKEUSDT']  ## list of coins to trade, example: ['ETHUSDT', 'BNBUSDT']
+    symbol = ['BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT']  ## list of coins to trade, example: ['ETHUSDT', 'BNBUSDT']
     Trade_All_Symbols = False  ## will test on all coins on exchange if true
 
     '''
