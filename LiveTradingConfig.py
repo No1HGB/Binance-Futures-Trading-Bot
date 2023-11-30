@@ -22,7 +22,7 @@ interval = '1m'
 SL_mult = .2 ## SL_mult x TP_SL_choice = SL value
 TP_mult = .3 ## TP_mult x TP_SL_choice = TP value
 trade_all_symbols = False
-symbols_to_trade = ['BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT'] ## 'BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT'
+symbols_to_trade = ['BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT','IOTAUSDT','USTCUSDT','DOGEUSDT','SEIUSDT','IDUSDT','LINKUSDT','AVAXUSDT']
 coin_exclusion_list = ['USDCUSDT', 'BTCDOMUSDT'] ## Put coins you want to exclude in here, so they won't be traded
 use_trailing_stop = False
 trailing_stop_callback = .1
