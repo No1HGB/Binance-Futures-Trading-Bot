@@ -6,7 +6,7 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY")
 API_SECRET = os.getenv("API_SECRET")
 
-trading_strategy = 'tripleEMAStochasticRSIATR'
+trading_strategy = 'StochRSIMACD'
 '''
 valid options for trading_strategy are: 'StochRSIMACD', 'tripleEMAStochasticRSIATR', 'tripleEMA', 'breakout', 'stochBB',
 'goldenCross', 'candle_wick', 'fibMACD', 'EMA_cross', 'heikin_ashi_ema2', 'heikin_ashi_ema', 'ema_crossover'
@@ -19,8 +19,8 @@ TP_SL_choice = '%'
 leverage = 10
 order_size = 10 ## % of account
 interval = '1m'
-SL_mult = 1.5 ## SL_mult x TP_SL_choice = SL value
-TP_mult = 1 ## TP_mult x TP_SL_choice = TP value
+SL_mult = 1.2 ## SL_mult x TP_SL_choice = SL value
+TP_mult = 2 ## TP_mult x TP_SL_choice = TP value
 trade_all_symbols = False
 symbols_to_trade = ['BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT','IOTAUSDT','USTCUSDT','DOGEUSDT','SEIUSDT','IDUSDT','LINKUSDT','AVAXUSDT']
 coin_exclusion_list = ['USDCUSDT', 'BTCDOMUSDT'] ## Put coins you want to exclude in here, so they won't be traded
