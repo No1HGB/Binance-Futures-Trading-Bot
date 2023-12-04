@@ -11,7 +11,7 @@ trading_strategy = 'StochRSIMACD'
 valid options for trading_strategy are: 'StochRSIMACD', 'tripleEMAStochasticRSIATR', 'tripleEMA', 'breakout', 'stochBB',
 'goldenCross', 'candle_wick', 'fibMACD', 'EMA_cross', 'heikin_ashi_ema2', 'heikin_ashi_ema', 'ema_crossover'
 '''
-TP_SL_choice = 'x (ATR)'
+TP_SL_choice = '%'
 '''valid options for TP_SL_choice are: 'USDT', '%', 'x (ATR)', 'x (Swing High/Low) level 1',
 'x (Swing High/Low) level 2', 'x (Swing High/Low) level 3', 'x (Swing Close) level 1',
 'x (Swing Close) level 2', 'x (Swing Close) level 3
@@ -19,8 +19,8 @@ TP_SL_choice = 'x (ATR)'
 leverage = 10
 order_size = 10 ## % of account
 interval = '15m'
-SL_mult = 2 ## SL_mult x TP_SL_choice = SL value
-TP_mult = 3 ## TP_mult x TP_SL_choice = TP value
+SL_mult = 1.5 ## SL_mult x TP_SL_choice = SL value
+TP_mult = 2 ## TP_mult x TP_SL_choice = TP value
 trade_all_symbols = False
 symbols_to_trade = ['BTCUSDT','SOLUSDT','XRPUSDT','BNBUSDT','ETHUSDT','IOTAUSDT','USTCUSDT','DOGEUSDT','SEIUSDT','IDUSDT','LINKUSDT','AVAXUSDT']
 coin_exclusion_list = ['USDCUSDT', 'BTCDOMUSDT'] ## Put coins you want to exclude in here, so they won't be traded
